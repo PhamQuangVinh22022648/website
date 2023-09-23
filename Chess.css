@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.background-image {
+    background-image: url('./2c845a66b8ad2a8aafd288bdc16cd459.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.info-panel
+{
+    width: 400px; /* Adjust the width as needed */
+    height: 400px; /* Make it the same height as the chessboard */
+    background-color: white; /* Background color of the table */
+    margin-left: 120px;
+    border: 2px solid #ccc;
+    text-align: center;
+    border: 1px solid black; /* Border around the table */
+    padding: 10px; /* Add some padding to the table content */
+    box-sizing: border-box; /* Include padding in the width/height */
+    .clock-label {
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold; /* Add space below the clock labels */
+    }
+    .clock {
+        font-size: 24px; /* Adjust the font size as needed */
+        margin-bottom: 20px; /* Add space below the clocks */
+        border: 2px solid #ccc; /* Add a border around the clocks for separation */
+        padding: 10px; /* Add some padding to the clocks for spacing */
+        background-color: #f5f5f5; /* Add a background color to the clocks */
+        text-align: center;
+    }
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+h3
+{
+    font-size: 24px
+}
+.divv {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+}
+
+.box {
+    margin: .0px;
+    width: 75px;
+    height: 75px;
+}
+
+#tog {
+    margin: 10px 0px;
+}
+
+.allimg {
+    width: 65px;
+    position: relative;
+    bottom: 5px;
+}
+.chess-board{
+    margin-top: 20px;
+}
+
+.allpawn {
+    transform: scale(1);
+}
+
+.authcont {
+    width: 100vw;
+}
+
+@media (max-width: 650px) {
+    #tog {
+        margin-bottom: 70px;
+    }
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    .allimg {
+        width: 11vw; /* Change the width to match the size of the pawn */
+    }
+}
